@@ -34,8 +34,12 @@
 
 [alias]
 	co = checkout
+  	ci = commit
 	a = add
 	st = status
 	br = branch
 	c = commit
+  	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  	type = cat-file -t
+  	dump = cat-file -p
 
